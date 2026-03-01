@@ -5,7 +5,7 @@ variable "instance_count" {
 provider "google" {
   project     = var.project_id
   region      = "us-central1"
-  credentials = file("~/terraform-key.json")
+  credentials = file("terraform-key.json")
 }
 
 resource "google_compute_instance" "vm_example" {
